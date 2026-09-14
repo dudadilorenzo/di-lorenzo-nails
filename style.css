@@ -1,0 +1,597 @@
+/* =========================================
+   DI LORENZO NAILS
+   ESTILO: ELEGANTE E MINIMALISTA
+========================================= */
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf8f7;
+    color: #35191f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.header {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: #faf8f7;
+
+    border-bottom: 1px solid #e8dddd;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+
+    color: #641d29;
+}
+
+.logo small {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #765b60;
+
+    margin-top: 2px;
+}
+
+
+/* MENU LINKS */
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu a {
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: #4d3439;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #8b2635;
+}
+
+
+/* =========================================
+   CAPA
+========================================= */
+
+.hero {
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #faf8f7 0%,
+            #faf8f7 55%,
+            #eee3e1 100%
+        );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.mini-title {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #8b2635;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(55px, 7vw, 90px);
+
+    line-height: 0.98;
+
+    font-weight: normal;
+
+    color: #541923;
+
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    max-width: 450px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #705e62;
+
+    margin-bottom: 40px;
+}
+
+
+/* BOTÃO */
+
+.button {
+    display: inline-block;
+
+    padding: 16px 34px;
+
+    background: #6d1f2b;
+
+    color: white;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #48141d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.section {
+    padding: 120px 8%;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+.section-title p {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #8b2635;
+
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 48px;
+
+    font-weight: normal;
+
+    color: #541923;
+}
+
+.section-title span {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #79686b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SERVIÇOS
+========================================= */
+
+.services {
+    background: #fff;
+}
+
+.services-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid #e5dada;
+    border-left: 1px solid #e5dada;
+}
+
+.service-card {
+    padding: 45px;
+
+    min-height: 230px;
+
+    border-right: 1px solid #e5dada;
+    border-bottom: 1px solid #e5dada;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    background: #faf5f4;
+}
+
+.service-card span {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #a27b80;
+
+    font-size: 14px;
+}
+
+.service-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: normal;
+
+    font-size: 27px;
+
+    color: #641d29;
+
+    margin: 20px 0 12px;
+}
+
+.service-card p {
+    color: #756468;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    max-width: 380px;
+}
+
+
+/* =========================================
+   CATÁLOGO
+========================================= */
+
+.catalog {
+    background: #f3eae8;
+}
+
+.catalog-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.catalog-item {
+    aspect-ratio: 3 / 4;
+
+    overflow: hidden;
+
+    background: #e7d8d5;
+}
+
+.photo-placeholder {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #927b7e;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.about {
+    background: #fff;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 750px;
+
+    text-align: center;
+}
+
+.about h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: normal;
+
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    color: #541923;
+
+    margin-bottom: 35px;
+}
+
+.about-content p:not(.mini-title) {
+    color: #705f63;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   AGENDAMENTO
+========================================= */
+
+.booking {
+    background: #6d1f2b;
+
+    color: white;
+
+    text-align: center;
+}
+
+.booking-content {
+    max-width: 650px;
+
+    margin: auto;
+}
+
+.booking .mini-title {
+    color: #e4c9cd;
+}
+
+.booking h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: normal;
+
+    font-size: 50px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.booking p:not(.mini-title) {
+    color: #eadcde;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.button-light {
+    background: #fff;
+
+    color: #641d29;
+}
+
+.button-light:hover {
+    background: #f2e8e9;
+
+    color: #641d29;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+    background: #35171d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px 25px;
+}
+
+.footer-logo {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 25px;
+}
+
+.footer-logo span {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+}
+
+.footer-logo small {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #cdb6b9;
+
+    margin-top: 4px;
+}
+
+.footer-info {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    font-size: 12px;
+
+    color: #d9c9cb;
+
+    margin-bottom: 40px;
+}
+
+.footer-info a:hover {
+    color: white;
+}
+
+.copyright {
+    padding-top: 20px;
+
+    border-top: 1px solid #56353b;
+
+    font-size: 10px;
+
+    color: #a99094;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+
+        padding: 22px 6%;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 9px;
+    }
+
+    .hero {
+        min-height: 80vh;
+
+        padding: 70px 8%;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .section {
+        padding: 80px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .about h2,
+    .booking h2 {
+        font-size: 38px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+} .catalog-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
